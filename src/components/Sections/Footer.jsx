@@ -121,7 +121,7 @@ const Footer = () => {
                   }}
                   className="text-blue-500"
                 >
-                  <Code2 size-20 />
+                  <Code2 size={20} />
                 </motion.div>
                 <span>Aditya Jaiwal</span>
               </motion.div>

@@ -146,7 +146,7 @@ const ContactSection = () => {
                 <motion.button
                   disabled={isSubmitting}
                   whileHover={{ y: -2, sclae: 1.02 }}
-                  whilteTap={{ scale: 0.98 }}
+                  whileTap={{ scale: 0.98 }}
                   onClick={handleSubmit}
                   className="w-full bg-blue-500 hover:bg-blue-600 disabled:bg-blue-400 text-white py-4 rounded-xl text-sm uppercase tracking-wider font-medium transition-all duration-300 flex items-center justify-center space-x-2 "
                 >
@@ -224,7 +224,7 @@ const ContactSection = () => {
               <div className="grid grid-cols-2 gap-4">
                 {SOCIAL_LINKS.map((social) => (
                   <motion.a
-                    key={social.label}
+                    key={social.name}
                     href={social.url}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -267,18 +267,37 @@ const ContactSection = () => {
         </div>
 
         {/* Bottom CTA */}
-        <motion.div initial="hidden" animate={isInView ? "visible" : "hidden"} variants={containerVariants} className="text-center mt-20" >
-          <motion.div variants={itemVariants} className={`max-w-2xl mx-auto p-8 rounded-2xl border ${
-            isDarkMode ? "bg-gray-800/30 border-gray-700" : "bg-gray-50/50 border-gray-200"
-          }`} >
+        <motion.div
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+          variants={containerVariants}
+          className="text-center mt-20"
+        >
+          <motion.div
+            variants={itemVariants}
+            className={`max-w-2xl mx-auto p-8 rounded-2xl border ${
+              isDarkMode
+                ? "bg-gray-800/30 border-gray-700"
+                : "bg-gray-50/50 border-gray-200"
+            }`}
+          >
             <h3 className="text-xl font-medium mb-4">Prefer a quick call?</h3>
-            <p className={`
-              ${isDarkMode ? "text-gray-400" : "text-gray-600"} mb-6`}>
-              Sometimes a conversation is worth a thousand messages. Feel free to schedule a call to discuss your project.
+            <p
+              className={`
+              ${isDarkMode ? "text-gray-400" : "text-gray-600"} mb-6`}
+            >
+              Sometimes a conversation is worth a thousand messages. Feel free
+              to schedule a call to discuss your project.
             </p>
-            <motion.button whileHover={{y: -2, scale: 1.05}} whileTap={{scale:0.98}} className={`px-6 py-3 rounded-full border font-medium transition-all duration-300 ${
-              isDarkMode ? "border-gray-600 hover:border-blue-500 hover:text-blue-400" : "border-gray-300 hover:border-blue-500 hover:text-blue-600"
-            }`} >
+            <motion.button
+              whileHover={{ y: -2, scale: 1.05 }}
+              whileTap={{ scale: 0.98 }}
+              className={`px-6 py-3 rounded-full border font-medium transition-all duration-300 ${
+                isDarkMode
+                  ? "border-gray-600 hover:border-blue-500 hover:text-blue-400"
+                  : "border-gray-300 hover:border-blue-500 hover:text-blue-600"
+              }`}
+            >
               Schedule a Call
             </motion.button>
           </motion.div>
