@@ -132,7 +132,7 @@ const SkillSection = () => {
                       <span className="text-sm font-medium">{skill.name}</span>
                       <span
                         className={`text-xs ${
-                          isDarkMode ? "bg-gray-500" : "bg-gray-600"
+                          isDarkMode ? "text-gray-200" : "text-gray-600"
                         }`}
                       >
                         {skill.level}%
@@ -148,7 +148,7 @@ const SkillSection = () => {
                         initial="hidden"
                         animate={isInView ? "visible" : "hidden"}
                         custom={skill.level}
-                        className={`h-full rounded-full ${
+                        className={`h-full rounded-full  ${
                           skill.color
                         } relative`}
                       >
@@ -205,12 +205,12 @@ const SkillSection = () => {
               variants={itemVariants}
               className="text-center"
             >
-              <div className="text-2xl md:text-2xl font-light text-blue-500 mb-2">
+              <div className="text-2xl md:text-3xl font-light text-blue-500 mb-2">
                 {stat.number}
               </div>
               <div
                 className={`text-sm ${
-                  isDarkMode ? "text-gray-400" : "text-gray-600"
+                  isDarkMode ? "text-gray-600" : "text-gray-400"
                 }`}
               >
                 {stat.label}
