@@ -169,15 +169,15 @@ const AboutSection = () => {
             {/* Digital Signature */}
             <motion.div variants={itemVariants} className="text-center py-8">
               <div
-                className={`text-sm ${isDarkMode ? "text-gray-500" : "text-gray-600"} mb-4`}
+                className={`text-lg ${isDarkMode ? "text-gray-500" : "text-gray-600"} mb-4`}
               >
                 Crafted with passion by
               </div>
               {/* <DigitalSignature /> */}
               <div className="flex justify-center">
-                <img src={SIGNATURE} alt="Aditya" className="w-28" />
+                <img src={SIGNATURE} alt="Aditya" className="w-75" />
               </div>
-              <div className="text-lg font-medium text-blue-500 mt-2">
+              <div className="text-2xl font-medium text-blue-500 mt-2">
                 Aditya Jaiswal
               </div>
             </motion.div>
@@ -258,12 +258,28 @@ const AboutSection = () => {
         </div>
 
         {/* Call to Action */}
-        <motion.div initial="hidden" animate={isInView ? "visible" : "hidden"} variants={containerVariants} className="text-center mt-20" >
-          <motion.div variants={itemVariants} className="flex flex-col items-center space-y-6" >
-            <p className={`text-lg ${
-              isDarkMode ? "text-gray-400" : "text-gray-600"
-            }`}>Ready to bring your ideas to life?</p>
-            <motion.button whileHover={{y: -2, scale: 1.05}} whileTap={{scale: 0.98}} className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-full text-sm tracking-wider font-medium uppercase transition-all duration-300" >
+        <motion.div
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+          variants={containerVariants}
+          className="text-center mt-20"
+        >
+          <motion.div
+            variants={itemVariants}
+            className="flex flex-col items-center space-y-6"
+          >
+            <p
+              className={`text-lg ${
+                isDarkMode ? "text-gray-400" : "text-gray-600"
+              }`}
+            >
+              Ready to bring your ideas to life?
+            </p>
+            <motion.button
+              whileHover={{ y: -2, scale: 1.05 }}
+              whileTap={{ scale: 0.98 }}
+              className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-full text-sm tracking-wider font-medium uppercase transition-all duration-300"
+            >
               Let's Work Together
             </motion.button>
           </motion.div>
