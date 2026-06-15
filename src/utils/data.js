@@ -20,7 +20,7 @@ import PROJECT_IMG_2 from "../assets/images/project-2.png";
 import PROJECT_IMG_3 from "../assets/images/project-3.png";
 import PROJECT_IMG_4 from "../assets/images/project-4.png";
 import PROJECT_IMG_5 from "../assets/images/project-5.jpg";
-import PROJECT_IMG_6 from "../assets/images/project-6.jpg";
+import PROJECT_IMG_6 from "../assets/images/project-6.png";
 
 export const SKILLS_CATEGORY = [
   {
@@ -100,6 +100,18 @@ export const STATS = [
 export const PROJECTS = [
   {
     id: 1,
+    title: "InterviewIQ.AI",
+    description:
+      "Developed an AI-powered mock interview platform that simulates real interview experiences and provides personalized feedback to improve candidate performance. Features role-based interview generation, real-time assessment, and detailed performance analytics.",
+    image: PROJECT_IMG_6,
+    tags: ["Vite", "Node.js", "MongoDB", "Tailwindcss"],
+    liveUrl: "https://ai-interview-dun-delta.vercel.app/",
+    githubUrl: "https://github.com/aditya2909/aditya-portfolio-new",
+    featured: true,
+    category: "Full Stack",
+  },
+  {
+    id: 2,
     title: "AI Learning App",
     description:
       "Designed an AI-powered learning assistant dashboard that enables users to manage study documents, flashcards, and quizzes within a centralized interface. The dashboard improves learning productivity through structured navigation and activity tracking.",
@@ -111,7 +123,7 @@ export const PROJECTS = [
     category: "Full Stack",
   },
   {
-    id: 2,
+    id: 3,
     title: "AI Resume Builder",
     description:
       "Created a SaaS-style landing page for an AI-powered resume generator that helps users create professional resumes efficiently. The design focuses on conversion optimization with strong typography, CTA placement, and brand trust indicators.",
@@ -123,7 +135,7 @@ export const PROJECTS = [
     category: "Full Stack",
   },
   {
-    id: 3,
+    id: 4,
     title: "Sociout Media App",
     description:
       "Developed a modern social media feed interface featuring story previews, post creation tools, activity updates, and sidebar navigation for seamless user interaction. The layout emphasizes usability, responsiveness, and structured content flow to replicate real-world social networking platforms.",
@@ -135,7 +147,7 @@ export const PROJECTS = [
     category: "Full Stack",
   },
   {
-    id: 4,
+    id: 5,
     title: "Chat Application",
     description:
       "Designed and developed a modern authentication interface for a real-time chat application, featuring a dark-themed layout and engaging 3D illustrations to enhance user experience. The login screen provides secure access to messaging features while maintaining a clean and visually appealing UI suitable for contemporary communication platforms.",
@@ -147,7 +159,7 @@ export const PROJECTS = [
     category: "Full Stack",
   },
   {
-    id: 5,
+    id: 6,
     title: "MoonFlix (Netflix Clone)",
     description:
       "Built a movie streaming platform homepage inspired by OTT services, featuring dynamic hero banners, category navigation, and featured movie highlights. The interface enhances discoverability and engagement.",
@@ -155,18 +167,6 @@ export const PROJECTS = [
     tags: ["React", "Node.js", "MongoDB", "Tailwindcss"],
     liveUrl: "https://movie-mern.vercel.app/",
     githubUrl: "https://github.com/aditya2909/MovieMern",
-    featured: false,
-    category: "Full Stack",
-  },
-  {
-    id: 6,
-    title: "Booksly (Library App)",
-    description:
-      "Developed an e-commerce bookstore homepage with promotional banners, product navigation, and trust indicators to enhance shopping experience. The interface supports scalable product browsing and conversion-focused design.",
-    image: PROJECT_IMG_6,
-    tags: ["HTML", "CSS", "Javascript"],
-    liveUrl: "https://bookslycom.netlify.app/",
-    githubUrl: "#",
     featured: false,
     category: "Full Stack",
   },
