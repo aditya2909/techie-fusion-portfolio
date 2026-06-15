@@ -127,7 +127,7 @@ const Footer = () => {
               </motion.div>
               <motion.p
                 variants={itemVariants}
-                className={`text-sm ${isDarkMode ? "text-gray-400" : "text-gray-600"} max-w-md mx-auto`}
+                className={`text-sm ${isDarkMode ? "text-gray-400" : "text-gray-600"} max-w-lg mx-auto`}
               >
                 Crafting digital experiences with passion, precision, and a
                 touch of magic.
@@ -186,11 +186,11 @@ const Footer = () => {
           </motion.div>
 
           {/* Copyright */}
-          <motion.div variants={itemVariants} className="space-y-2">
+          <motion.div variants={itemVariants} className="space-y-2 flex flex-col items-center justify-center mt-2">
             <p
               className={`text-sm ${isDarkMode ? "text-gray-500" : "text-gray-600"}`}
             >
-              &copy; {new Date().getFullYear()} Time To Program. All rights
+              &copy; {new Date().getFullYear()} Aditya Jaiswal. All rights
               reserved.
             </p>
             <p
@@ -201,10 +201,10 @@ const Footer = () => {
           </motion.div>
 
           {/* Back to Top Button */}
-          <motion.div variants={itemVariants}>
+          <motion.div className="flex items-end justify-end" variants={itemVariants}>
             <motion.button
               onClick={scrollToTop}
-              className={`inline-flex items-center space-x-2 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+              className={`inline-flex items-end space-x-2 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
                 isDarkMode
                   ? "bg-gray-800/50 hover:bg-gray-700/50 text-gray-400 hover:text-white "
                   : "bg-gray-100/50 hover:bg-gray-200/50 text-gray-600 hover:text-gray-900"

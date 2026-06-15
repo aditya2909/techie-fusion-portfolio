@@ -10,7 +10,7 @@ import Footer from "./components/Sections/Footer";
 function App() {
   return (
     <ThemeProvider>
-      <div className="pb-[100vh]">
+      <div>
         <Navbar />
         <HeroSection />
         <SkillSection />
