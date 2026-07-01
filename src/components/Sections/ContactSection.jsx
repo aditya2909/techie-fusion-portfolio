@@ -95,8 +95,15 @@ const ContactSection = () => {
               isDarkMode ? "text-gray-400" : "text-gray-600"
             }`}
           >
-            Ready to start your next project? Let's discuss how we can bring
-            your ideas to life.
+            Ready to start your next project?
+          </motion.p>
+          <motion.p
+            variants={itemVariants}
+            className={`text-xl max-w-2xl mx-auto ${
+              isDarkMode ? "text-gray-400" : "text-gray-600"
+            }`}
+          >
+            Let's discuss how we can bring your ideas to life.
           </motion.p>
         </motion.div>
 

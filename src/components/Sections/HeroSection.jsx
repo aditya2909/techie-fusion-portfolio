@@ -54,7 +54,7 @@ const HeroSection = () => {
       <motion.section
         id="home"
         style={{ y: heroY }}
-        className="min-h-screen flex items-center justify-center relative px-6 pt-20"
+        className="min-h-screen flex items-center justify-center relative px-6"
       >
         <div className="absolute inset-0 overflow-hidden">
           <motion.div
@@ -72,7 +72,7 @@ const HeroSection = () => {
             }`}
           />
         </div>
-        <div className="max-w-7xl mx-auto w-full z-10 mt-20">
+        <div className="max-w-7xl mx-auto w-full z-10 mt-10">
           {/* Mobile Layout - Centered */}
           <div className="block lg:hidden">
             <motion.div
@@ -116,7 +116,7 @@ const HeroSection = () => {
                   isDarkMode ? "text-gray-500" : "text-gray-600"
                 } mb-4`}
               >
-                Full Stack Developer
+                DIGITAL MARKETING • WEB DEVELOPMENT • SOFTWARE SOLUTIONS
               </motion.div>
               <motion.h1
                 variants={itemVariants}
@@ -125,15 +125,15 @@ const HeroSection = () => {
                 <span
                   className={`${isDarkMode ? "text-white" : "text-gray-900"}`}
                 >
-                  Building Digital
+                  Every Brand
                 </span>
                 <span className="text-blue-500 font-medium ml-2">
-                  experiences{" "}
+                  Has A Story.
                 </span>
                 <span
                   className={`${isDarkMode ? "text-white" : "text-gray-900"}`}
                 >
-                  that matter
+                  We Bring It Online.
                 </span>
               </motion.h1>
               <motion.p
@@ -142,8 +142,11 @@ const HeroSection = () => {
                   isDarkMode ? "text-gray-400" : "text-gray-600"
                 } mb-8 max-w-xl mx-auto font-light leading-relaxed`}
               >
-                I craft beautiful, functional web application with modern
-                technologies and thoughtful user experiences.
+                We partner with ambitious businesses to create exceptional
+                digital experiences through strategic marketing, modern
+                websites, scalable software, and intelligent automation—helping
+                brands grow, streamline operations, and succeed in an
+                ever-evolving digital world.
               </motion.p>
 
               {/* CTA Button - Mobile */}
@@ -206,37 +209,37 @@ const HeroSection = () => {
                 <span
                   className={isDarkMode ? "text-gray-600" : "text-gray-500"}
                 >
-                  React
+                  SEO
                 </span>
                 <span
                   className={isDarkMode ? "text-gray-700" : "text-gray-400"}
                 >
-                  .
+                  •
                 </span>
                 <span
                   className={isDarkMode ? "text-gray-600" : "text-gray-500"}
                 >
-                  Node.js
+                  Google Ads
                 </span>
                 <span
                   className={isDarkMode ? "text-gray-700" : "text-gray-400"}
                 >
-                  .
+                  •
                 </span>
                 <span
                   className={isDarkMode ? "text-gray-600" : "text-gray-500"}
                 >
-                  Typescript
+                  Meta Ads
                 </span>
                 <span
                   className={isDarkMode ? "text-gray-700" : "text-gray-400"}
                 >
-                  .
+                  •
                 </span>
                 <span
                   className={isDarkMode ? "text-gray-600" : "text-gray-500"}
                 >
-                  MongoDB
+                  Social Media Marketing
                 </span>
               </motion.div>
             </motion.div>
@@ -257,7 +260,7 @@ const HeroSection = () => {
                   isDarkMode ? "text-gray-500" : "text-gray-600"
                 } mb-6`}
               >
-                Full Stack Developer
+                DIGITAL MARKETING • WEB DEVELOPMENT • SOFTWARE SOLUTIONS
               </motion.div>
               <motion.h1
                 variants={itemVariants}
@@ -266,15 +269,15 @@ const HeroSection = () => {
                 <span
                   className={`${isDarkMode ? "text-white" : "text-gray-900"}`}
                 >
-                  Building digital
+                  Every Brand
                 </span>
                 <br />
-                <span className="text-blue-500 font-medium">experiences</span>
+                <span className="text-blue-500 font-medium">Has A Story.</span>
                 <br />
                 <span
                   className={`${isDarkMode ? "text-white" : "text-gray-900"}`}
                 >
-                  that matter
+                  We Bring It Online.
                 </span>
               </motion.h1>
               <motion.p
@@ -283,8 +286,11 @@ const HeroSection = () => {
                   isDarkMode ? "text-gray-400" : "text-gray-600"
                 } mb-12 font-light leading-relaxed max-w-lg`}
               >
-                I craft beautiful, functional web applications with modern
-                technologies and thoughtful user experiences.
+                We partner with ambitious businesses to create exceptional
+                digital experiences through strategic marketing, modern
+                websites, scalable software, and intelligent automation—helping
+                brands grow, streamline operations, and succeed in an
+                ever-evolving digital world.
               </motion.p>
 
               {/* CTA Button - Desktop */}
@@ -300,7 +306,7 @@ const HeroSection = () => {
                 <motion.button
                   whileHover={{ y: -2 }}
                   whileTap={{ scale: 0.98 }}
-                  onClick={() => scrollToSection("work")}
+                  onClick={() => scrollToSection("contact")}
                   className={`border ${
                     isDarkMode
                       ? "border-gray-700 hover:border-gray-600 text-gray-300"
@@ -348,42 +354,42 @@ const HeroSection = () => {
                 {/* Tech Stack - Desktop */}
                 <motion.div
                   variants={itemVariants}
-                  className="flex justify-center space-x-8 text-xs uppercase tracking-widest absolute -top-16 -left-28"
+                  className="flex justify-center space-x-8 text-xs uppercase tracking-widest absolute -top-16 -left-5"
                 >
                   <span
                     className={isDarkMode ? "text-gray-600" : "text-gray-500"}
                   >
-                    React
+                    SEO
                   </span>
                   <span
                     className={isDarkMode ? "text-gray-700" : "text-gray-400"}
                   >
-                    .
+                    •
                   </span>
                   <span
                     className={isDarkMode ? "text-gray-600" : "text-gray-500"}
                   >
-                    Node.js
+                    Google Ads
                   </span>
                   <span
                     className={isDarkMode ? "text-gray-700" : "text-gray-400"}
                   >
-                    .
+                    •
                   </span>
                   <span
                     className={isDarkMode ? "text-gray-600" : "text-gray-500"}
                   >
-                    Typescript
+                    Meta Ads
                   </span>
                   <span
                     className={isDarkMode ? "text-gray-700" : "text-gray-400"}
                   >
-                    .
+                    •
                   </span>
                   <span
                     className={isDarkMode ? "text-gray-600" : "text-gray-500"}
                   >
-                    MongoDB
+                    Social Media Marketing
                   </span>
                 </motion.div>
                 <motion.div
@@ -426,6 +432,7 @@ const HeroSection = () => {
 
         {/* Scroll Indicator */}
         <motion.div
+          onClick={() => scrollToSection("skills")}
           animate={{ y: [0, 8, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
           className="absolute bottom-0 left-1/2 transform -translate-x-1/2"

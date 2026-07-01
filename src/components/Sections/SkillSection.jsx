@@ -65,14 +65,14 @@ const SkillSection = () => {
               isDarkMode ? "text-gray-500" : "text-gray-600"
             } mb-4`}
           >
-            Technical Expertise
+            DIGITAL CAPABILITIES
           </motion.div>
           <motion.h2
             className="text-3xl md:text-5xl font-light mb-6"
             variants={itemVariants}
           >
-            Skills &
-            <span className="text-blue-500 font-medium">Technolocies</span>
+            Everything Your Business
+            <span className="text-blue-500 font-medium"> Needs To Grow</span>
           </motion.h2>
 
           <motion.p
@@ -81,8 +81,9 @@ const SkillSection = () => {
             } max-w-2xlmx-auto font-light`}
             variants={itemVariants}
           >
-            A comprehensive toolkit for building modern, scalable web
-            applications from concept to deployment.
+            From websites and business software to digital marketing and cloud
+            infrastructure, we deliver complete digital solutions designed to
+            accelerate growth and maximize business value.
           </motion.p>
         </motion.div>
 

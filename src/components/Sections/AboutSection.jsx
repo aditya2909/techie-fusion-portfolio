@@ -76,14 +76,14 @@ const AboutSection = () => {
               isDarkMode ? "text-gray-500" : "text-gray-600"
             }`}
           >
-            Get to Know Me
+            Get to Know Us
           </motion.div>
           <motion.h2
             varitants={itemVariants}
             className="text-3xl md:text-5xl font-light mb-6"
           >
-            About
-            <span className="text-blue-500 font-medium">Me</span>
+            Our
+            <span className="text-blue-500 font-medium">Journey</span>
           </motion.h2>
         </motion.div>
 
@@ -103,35 +103,53 @@ const AboutSection = () => {
                   : "bg-gray-50/80 border-gray-200 backdrop-blur-sm"
               }`}
             >
-              <h3 className="text-2xl font-semibold mb-6">My Mission</h3>
+              <h3 className="text-3xl px-8 mx-7 text-center font-semibold mb-6">
+                Building Digital Success, One Business at a Time.
+              </h3>
               <p
                 className={`text-lg leading-relaxed mb-6 ${
                   isDarkMode ? "text-gray-300" : "text-gray-700"
                 }`}
               >
-                I believe technology should be a bridge that connects people and
-                solves real-world problems. My passion lies in crafting digital
-                experiences that are not just functional, but delightful and
-                accessible to everyone.
+                In today's digital-first world, businesses need more than just a
+                website—they need a strategic partner who understands
+                technology, creativity, and growth.
               </p>
               <p
-                className={`text-base leading-relaxed ${
+                className={`text-base leading-relaxed mb-6 ${
                   isDarkMode ? "text-gray-400" : "text-gray-600"
                 }`}
               >
-                When I'm not coding, you'll find me exploring new frameworks,
-                contributing to open source, or mentoring aspiring developers. I
-                love the constant evolution of web technologies and the endless
-                possibilities they bring to create meaningful digital
-                experiences.
+                At Techie-Fusion, we help startups, SMEs, and enterprises
+                establish a powerful digital presence through innovative
+                marketing strategies, high-performance websites, custom web
+                applications, and scalable software solutions.
+              </p>
+              <p
+                className={`text-base leading-relaxed mb-6 ${
+                  isDarkMode ? "text-gray-400" : "text-gray-600"
+                }`}
+              >
+                Our approach combines creative thinking, technical expertise,
+                and data-driven decision-making to deliver digital experiences
+                that not only look exceptional but also generate measurable
+                business results.
+              </p>
+              <p
+                className={`text-base leading-relaxed mb-6 ${
+                  isDarkMode ? "text-gray-400" : "text-gray-600"
+                }`}
+              >
+                Whether you're launching a new brand, modernizing your online
+                presence, or automating business operations, we're committed to
+                building solutions that empower your business today and prepare
+                it for tomorrow.
               </p>
             </motion.div>
 
             {/* What I Love Building */}
             <motion.div variants={itemVariants} className="space-y-4">
-              <h3 className="text-xl font-semibold mb-6">
-                What I Love Building
-              </h3>
+              <h3 className="text-xl font-semibold mb-6">What We Believe In</h3>
               <div className="grid gap-4">
                 {PASSIONS.map((passion, index) => (
                   <motion.div
@@ -149,7 +167,7 @@ const AboutSection = () => {
                         isDarkMode ? "bg-gray-700" : "bg-white"
                       }`}
                     >
-                      <passion.icons size={20} className="text-blue-500" />
+                      <passion.icons size={40} className="text-blue-500" />
                     </div>
                     <div>
                       <h4 className="font-medium mb-1">{passion.title}</h4>
