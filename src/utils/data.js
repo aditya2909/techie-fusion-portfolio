@@ -32,12 +32,12 @@ import PROJECT_IMG_4 from "../assets/images/project-4.png";
 import PROJECT_IMG_5 from "../assets/images/project-5.png";
 import PROJECT_IMG_6 from "../assets/images/project-6.png";
 import PROJECT_IMG_7 from "../assets/images/project-7.png";
-import PROJECT_IMG_8 from "../assets/images/project-8.png";
-import PROJECT_IMG_9 from "../assets/images/project-9.png";
+import PROJECT_IMG_8 from "../assets/images/Project-8.png";
+import PROJECT_IMG_9 from "../assets/images/Project-9.png";
 import PROJECT_IMG_10 from "../assets/images/project-10.png";
-import PROJECT_IMG_11 from "../assets/images/project-11.png";
+import PROJECT_IMG_11 from "../assets/images/Project-11.png";
 import PROJECT_IMG_12 from "../assets/images/project-12.jpg";
-import PROJECT_IMG_13 from "../assets/images/project-13.png";
+import PROJECT_IMG_13 from "../assets/images/Project-13.png";
 
 export const SKILLS_CATEGORY = [
   {
